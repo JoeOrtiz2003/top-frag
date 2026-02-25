@@ -99,12 +99,14 @@ async function fetchSheet() {
       .style.backgroundImage =
       `url(${rect})`;
 
-        // Adjust the layout size for the background image
-        const bg = group.querySelector(".rectangle-3");
+    // Adjust the layout size for the background image
+    const bg = group.querySelector(".rectangle-3");
 
-        bg.style.backgroundSize = "cover";
-        bg.style.backgroundRepeat = "no-repeat";
-        bg.style.backgroundPosition = "center 10px"; // Moves image down
+    bg.style.backgroundSize = "cover";
+    bg.style.backgroundRepeat = "no-repeat";
+
+    // Move right + down
+    bg.style.backgroundPosition = "calc(50% + 40px) 10px";
 
 
       // Player Name

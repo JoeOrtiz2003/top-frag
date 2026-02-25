@@ -18,13 +18,13 @@ a {
 }
 
 :root {
-    --border-Main-MVP: #00abc9;
-    --header-name-color: #c2c2c2;
-    --header-text-shadow: 0 0 10px black;
-    --header-background-color: #0a6388;
-    --team-text-main-shadow: 0 0 10px black;
+    --border-Main-MVP: #45c4f0;
+    --header-name-color: #0090ca;
+    --header-text-shadow: white;
+    --header-background-color: #00133c;
+    --team-text-main-shadow: white;
     --team-text-Elims-shadow:white;
-    --team-background-color: #143e50;
+    --team-background-color: #00133c;
     --team-text-Sub-shadow:white;
     --kill-color: white;
     --kill-text-shadow: 0 0 10px black;
@@ -138,7 +138,7 @@ a {
   position: absolute;
   top: 466px;
   left: 373px;
-  font-family: "Anton-Regular", Helvetica;
+  font-family: "Agency Gothic CT Bold";
   font-weight: 400;
   color: #000000;
   font-size: 64px;
@@ -152,7 +152,7 @@ a {
   left: 340px;
   width: 300px;           /* Fixed container width */
   text-align: left;       /* Keeps text anchored */
-  font-family: "Anton-Regular", Helvetica;
+  font-family: "Oswald-SemiBold";
   font-weight: 400;
   color: var(--team-text-main-shadow);
   font-size: 50px;
@@ -276,7 +276,7 @@ a {
   width: 350px;          /* Fixed text area */
   text-align: left;      /* Keeps anchor stable */
   white-space: nowrap;   /* Prevents line breaks */
-  font-family: "Anton-Regular", Helvetica;
+  font-family: "Oswald-SemiBold";
   font-weight: 400;
   color: var(--team-text-Sub-shadow);
   font-size: 40px;
@@ -291,7 +291,7 @@ a {
   width: 350px;          /* Fixed text area */
   text-align: left;      /* Keeps anchor stable */
   white-space: nowrap;   /* Prevents line break */
-  font-family: "Anton-Regular", Helvetica;
+  font-family: "Oswald-SemiBold";
   font-weight: 400;
   color: var(--team-text-Sub-shadow);
   font-size: 35px;
@@ -307,7 +307,7 @@ a {
   width: 400px;          /* Fixed width area */
   text-align: left;      /* Keeps anchor point stable */
   white-space: nowrap;   /* Prevent line break */
-  font-family: "Anton-Regular", Helvetica;
+  font-family: "Oswald-SemiBold";
   font-weight: 400;
   color: var(--team-text-main-shadow);
   font-size: 85px;
