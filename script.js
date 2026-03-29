@@ -83,8 +83,7 @@ async function fetchSheet() {
       const logo =
       row[5]?.v || "";
 
-      const rect =
-      row[6]?.v || "";
+      const rect = row[6]?.v?.toString().trim() || "";
 
       const kills =
       row[7]?.v || "";
@@ -94,13 +93,13 @@ async function fetchSheet() {
       const group = groups[i];
 
 
-      // Rectangle image
-      group.querySelector(".rectangle-3")
-      .style.backgroundImage =
-      `url(${rect})`;
-
-    // Adjust the layout size for the background image
-    const bg = group.querySelector(".rectangle-3");
+      const bg = group.querySelector(".rectangle-3");
+      if (rect) {
+        bg.style.backgroundImage = `url("${rect}")`;
+      } else {
+        bg.style.backgroundImage = "none";
+        console.log(`group-${i + 2} no rect image`, { rect, row });
+      }
 
     bg.style.backgroundSize = "cover";
     bg.style.backgroundRepeat = "no-repeat";
